@@ -1,0 +1,11 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             x:Class="GavilanesExamen3.Views.HistorialJGPage"
+             Title="Johao Gavilanes">
+    <ListView x:Name="JG_listViewHistorial" ItemsSource="{Binding Paises}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding NombreOficial}" Detail="{Binding Region}" />
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>
