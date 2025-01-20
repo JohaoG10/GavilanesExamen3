@@ -1,9 +1,10 @@
-namespace GavilanesExamen3.Views;
+using Microsoft.Maui.Controls;
 
 public partial class HistorialJGPage : ContentPage
 {
-	public HistorialJGPage()
-	{
-		InitializeComponent();
-	}
+    public HistorialJGPage()
+    {
+        InitializeComponent();
+        BindingContext = new HistorialJGViewModel();
+    }
 }
